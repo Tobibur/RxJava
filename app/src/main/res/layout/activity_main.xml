@@ -1,20 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.ashokslsk.rxjava.MainActivity">
-
+    android:paddingTop="@dimen/activity_vertical_margin">
 
     <TextView
-        android:id="@+id/txt_hello_world"
+        android:id="@+id/title_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:text="The RxJava1, Which is known as RxJava is becomes old and almost Deprecated,
+        \n Since that This is time, we have to move on RxJava2. \nIt is latest and has alot of new RxJava Operators includes here."
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/rxjava_only"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_below="@+id/title_info"
+        android:layout_margin="20dp"
+        android:text="Simple RxJava2" />
+
+    <Button
+        android:id="@+id/rxjava_using_retrofit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rxjava_only"
+        android:layout_margin="20dp"
+        android:text="Retrofit by RxJava2" />
 
 </RelativeLayout>

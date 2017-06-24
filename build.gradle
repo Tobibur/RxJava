@@ -5,7 +5,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.2.2'
+        classpath 'com.android.tools.build:gradle:2.3.3'
         classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
         classpath 'me.tatarka:gradle-retrolambda:3.2.3'
 
@@ -18,6 +18,34 @@ allprojects {
     repositories {
         jcenter()
     }
+}
+ext {
+    minSdk = 16
+    targetSdk = 24
+    buildToolsVersion = '25.0.1'
+    compileSdkVersion = 24
+    versionCode = System.getenv("BUILD_NUMBER") as Integer ?: 0
+    versionName = '1.0.' + versionCode
+
+    compatLibVer = '25.3.1'
+    okHttpVer = '2.5.0'
+    gsonVer = '2.4'
+
+    //Latest RxJava
+    rxJava2Ver = '2.1.0'
+    rxAndroid2Ver = '2.0.1'
+    rxRetroAdapterVer = '2.3.0'
+
+    //Retrofit
+    retrofit2Ver = '2.3.0'
+    okHttpVer = '3.8.0'
+
+    // Testing
+    junitVersion = '4.12'
+    espressoVersion = '2.2.2'
+
+    javaSourceCompatibility = JavaVersion.VERSION_1_7
+    javaTargetCompatibility = JavaVersion.VERSION_1_7
 }
 
 task clean(type: Delete) {
