@@ -1,14 +1,14 @@
-# RxJava 1
+# RxJava 2
 
-RxJava 1 Introduction
+RxJava 2 Introduction
 
 # What Will you Learn?
 ---------------------
 Through this project, you will: 
 * Understand the fundamentals of RxJava and Android.
 * We will consume github gist api and display it in textview
-* We will create observable and subscrition classes for understanding the RxJava
-* Schedulers 
+* We will create Observable and Observer classes for understanding the RxJava2
+* Schedulers, DisposableObserver
 * More..
 
 ##Screens
